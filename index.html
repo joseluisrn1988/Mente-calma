@@ -314,6 +314,81 @@
         </div>
     </section>
 
+<section class="container section">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+    <p style="text-align: center; margin-bottom: 30px; color: #666;">Resolvemos tus dudas para que des el paso con total tranquilidad.</p>
+
+    <div class="faq-accordion">
+        
+        <div class="faq-item">
+            <button class="faq-question">¿Qué síntomas son causados por la ansiedad? <span>+</span></button>
+            <div class="faq-answer">
+                <p>La ansiedad puede manifestarse de decenas de formas. Los más comunes son: taquicardia, sensación de falta de aire, opresión en el pecho, mareos, inestabilidad, hormigueo en extremidades, nudo en la garganta, tensión muscular y miedo constante a perder el control. Este manual está diseñado específicamente para calmar estas sensaciones físicas.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Ya he probado de todo y nada me funciona, ¿por qué esto sería diferente? <span>+</span></button>
+            <div class="faq-answer">
+                <p>La mayoría de los enfoques se centran solo en "pensar positivo". El Manual Maestro utiliza la <b>Psiconeurofisiología</b>, que actúa directamente sobre tu sistema nervioso. No te pedimos que cambies lo que piensas, sino que apliques técnicas físicas que obligan a tu cuerpo a relajarse por pura biología. Es un enfoque de raíz, no solo un parche mental.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Es este manual un sustituto de la terapia médica? <span>+</span></button>
+            <div class="faq-answer">
+                <p>No. Este manual es una herramienta complementaria de educación y entrenamiento biológico. Aunque ha ayudado a miles de personas, siempre recomendamos seguir las indicaciones de tu médico. Lo que este manual hace es darte el "control remoto" de tus síntomas para que tu proceso de recuperación sea mucho más rápido y llevadero.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿En cuánto tiempo empezaré a sentir alivio? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Las técnicas de emergencia están diseñadas para funcionar en <b>menos de 15 minutos</b>. Sin embargo, para ver una reducción permanente en la frecuencia de los síntomas, recomendamos aplicar el método de forma constante durante las primeras dos semanas.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Cómo recibiré el acceso al material? <span>+</span></button>
+            <div class="faq-answer">
+                <p>El acceso es inmediato. Una vez que realices el pago, recibirás un correo electrónico de la plataforma <b>Hotmart</b> con tus datos de acceso. Podrás leer el manual y los bonos desde tu celular, tablet o computadora, e incluso imprimirlos si lo prefieres.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Es seguro el pago y qué pasa si no me gusta? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Tu pago es 100% seguro y está encriptado por Hotmart. Además, tienes nuestra <b>Garantía de 7 días</b>. Si sientes que el contenido no es para ti, solo pides el reembolso y se te devuelve el dinero íntegramente. No tienes nada que perder y mucho bienestar que ganar.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .faq-accordion { margin-top: 20px; }
+    .faq-item { background: white; margin-bottom: 10px; border-radius: 15px; overflow: hidden; border: 1px solid #e5e7eb; }
+    .faq-question { width: 100%; text-align: left; padding: 20px; background: none; border: none; font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--secondary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
+    .faq-question:hover { background: #f9fdfd; }
+    .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #fff; }
+    .faq-answer p { padding-bottom: 20px; margin: 0; color: #4b5563; }
+    .faq-item.active .faq-answer { max-height: 500px; transition: max-height 0.5s ease-in; }
+    .faq-item.active .faq-question { color: var(--primary); }
+</style>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle('active');
+            
+            // Cambiar el signo + por -
+            const span = button.querySelector('span');
+            span.textContent = faqItem.classList.contains('active') ? '−' : '+';
+        });
+    });
+</script>
+    
     <footer>
         <p>&copy; 2026 Mente en Calma. Todos los derechos reservados.</p>
         <p>Este sitio no forma parte de Meta, Facebook o Instagram. Los resultados pueden variar en cada persona y el contenido de esta guía no sustituye el consejo médico profesional.</p>
