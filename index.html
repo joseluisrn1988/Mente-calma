@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adiós Ansiedad Física | Método Psiconeurofisiológico</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Desarma la Ansiedad | Manual Maestro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -15,107 +15,143 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'TU_ID_AQUÍ'); https://app.hotmart.com/hotlinks/3805697?productName=Elimina%20los%20Síntomas%20Físicos%20de%20la%20Ansiedad
+    fbq('init', 'TU_ID_DE_PIXEL'); 
     fbq('track', 'PageView');
     fbq('track', 'ViewContent');
     </script>
     <style>
-        :root { --primary: #1a3a5f; --accent: #e63946; --soft-blue: #f0f4f8; --success: #2d6a4f; }
-        body { font-family: 'Open Sans', sans-serif; margin: 0; color: #333; overflow-x: hidden; }
-        .top-bar { background: var(--accent); color: white; text-align: center; padding: 8px; font-weight: bold; font-size: 14px; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        :root { --primary: #1a3a5f; --accent: #e63946; --success: #2d6a4f; --bg: #f8fafc; }
+        body { font-family: 'Open Sans', sans-serif; margin: 0; color: #333; background: var(--bg); }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
         
-        /* HERO SECTION */
-        .hero { text-align: center; padding: 40px 0; background: linear-gradient(180deg, var(--soft-blue) 0%, #ffffff 100%); }
-        .headline { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.5rem; color: var(--primary); line-height: 1.2; margin-bottom: 20px; }
-        .highlight { color: var(--accent); }
+        /* HEADER */
+        .top-notice { background: var(--accent); color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 0.9rem; }
         
-        /* VIDEO/IMG PLACEHOLDER */
-        .main-media { width: 100%; max-width: 700px; height: 393px; background: #000; margin: 20px auto; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        /* HERO */
+        .hero { text-align: center; padding: 40px 20px; background: white; }
+        .headline { font-family: 'Montserrat', sans-serif; font-size: 2.2rem; color: var(--primary); font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .subheadline { font-size: 1.2rem; color: #555; margin-bottom: 30px; }
+        
+        /* IMAGEN PRINCIPAL / VIDEO */
+        .media-placeholder { width: 100%; max-width: 600px; height: 350px; background: #ddd; margin: 0 auto; border-radius: 15px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px dashed #999; }
 
         /* BUTTON */
-        .btn-cta { display: block; background: var(--success); color: white; text-align: center; padding: 22px; font-size: 1.6rem; font-weight: 800; text-decoration: none; border-radius: 10px; margin: 30px 0; border-bottom: 5px solid #1b4332; transition: 0.3s; }
-        .btn-cta:hover { transform: translateY(-3px); filter: brightness(1.1); }
+        .cta-button { display: block; background: var(--success); color: white; text-align: center; padding: 22px; font-size: 1.5rem; font-weight: 800; text-decoration: none; border-radius: 12px; margin: 30px 0; box-shadow: 0 10px 20px rgba(45, 106, 79, 0.3); transition: 0.3s; }
+        .cta-button:hover { transform: scale(1.02); }
 
-        /* SECTIONS */
-        .section-title { font-family: 'Montserrat', sans-serif; font-size: 1.8rem; color: var(--primary); text-align: center; margin-top: 50px; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
-        .card { background: var(--soft-blue); padding: 20px; border-radius: 10px; border-left: 5px solid var(--primary); }
+        /* SECCIONES */
+        .section { padding: 40px 0; }
+        .symptoms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .symptom-card { background: white; padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent); box-shadow: 0 2px 5px rgba(0,0,0,0.05); font-weight: 600; }
         
-        .faq { background: #f9f9f9; padding: 30px; border-radius: 15px; margin-top: 50px; }
-        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
-        .faq-q { font-weight: bold; color: var(--primary); display: block; margin-bottom: 5px; }
+        .bonus-box { background: #fffbeb; border: 2px solid #fef3c7; padding: 25px; border-radius: 15px; margin: 20px 0; }
+        .bonus-tag { background: #d97706; color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; font-weight: bold; }
+
+        .expert-box { background: var(--primary); color: white; padding: 30px; border-radius: 20px; display: flex; align-items: center; gap: 20px; margin-top: 40px; }
+        .expert-img { width: 120px; height: 120px; border-radius: 50%; background: #ccc; flex-shrink: 0; overflow: hidden; border: 3px solid white; }
+
+        .guarantee-box { text-align: center; border: 2px solid #27ae60; padding: 30px; border-radius: 15px; margin-top: 40px; background: #f0fff4; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #888; }
 
         @media (max-width: 600px) {
-            .headline { font-size: 1.8rem; }
-            .grid { grid-template-columns: 1fr; }
-            .main-media { height: 200px; }
+            .headline { font-size: 1.7rem; }
+            .symptoms-grid { grid-template-columns: 1fr; }
+            .expert-box { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
 
-<div class="top-bar">🔥 PRECIO ESPECIAL DISPONIBLE POR TIEMPO LIMITADO</div>
+<div class="top-notice">⚠️ OFERTA ÚNICA: El descuento del 85% expira hoy.</div>
 
 <section class="hero">
     <div class="container">
-        <h1 class="headline">¿Sientes que tu cuerpo está <span class="highlight">fuera de control</span> por la ansiedad?</h1>
-        <p style="font-size: 1.3rem;">Detén las taquicardias, los mareos y la opresión en el pecho con el método de 15 minutos basado en la Psiconeurofisiología.</p>
+        <h1 class="headline">Desarma los síntomas físicos de la ansiedad y recupera tu paz hoy mismo con el Manual Maestro de Psiconeurofisiología</h1>
+        <p class="subheadline">Aprende a desactivar el "Modo Supervivencia" de tu cerebro y detén taquicardias, mareos y opresión en el pecho en menos de 15 minutos, con el método probado de la Psic. Raquel Klein.</p>
         
-        <div class="main-media">
-            <div style="color:white; padding-top: 150px;">[ ESPACIO PARA VIDEO / IMAGEN PRINCIPAL ]</div>
+        <div class="media-placeholder">
+            <img src="REEMPLAZAR_POR_TU_IMAGEN_MOCKUP.jpg" alt="Manual Maestro" style="width:100%; height:100%; object-fit:cover;">
         </div>
 
-        <a href="https://go.hotmart.com/A103791493M?ap=b9c6" class="btn-cta" onclick="fbq('track', 'InitiateCheckout');">¡SÍ! QUIERO ELIMINAR LOS SÍNTOMAS</a>
+        <a href="TU_HOTLINK_DE_AFILIADO" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">¡SÍ! QUIERO DESARMAR MI ANSIEDAD AHORA</a>
     </div>
 </section>
 
-<div class="container">
-    <h2 class="section-title">Tu cuerpo no está roto, está en "Modo Supervivencia"</h2>
-    <p>Lo que sientes no es peligroso, pero es aterrador. La medicina tradicional suele decirte que "no tienes nada", pero tú sientes:</p>
+<section class="section container">
+    <h2 style="text-align: center; font-family: 'Montserrat'; color: var(--primary);">¿Te han dicho que "no tienes nada" pero tú te sientes mal?</h2>
+    <p style="text-align: center;">Tu cuerpo no está roto, está atrapado en un ciclo de falsa alarma. Si sientes esto, la Psiconeurofisiología es para ti:</p>
     
-    <div class="grid">
-        <div class="card">❌ <b>Taquicardia:</b> Sientes que el corazón va a salirse de tu pecho.</div>
-        <div class="card">❌ <b>Falta de Aire:</b> Un nudo en la garganta que no te deja respirar.</div>
-        <div class="card">❌ <b>Mareos:</b> Sensación de inestabilidad o de que te vas a desmayar.</div>
-        <div class="card">❌ <b>Presión:</b> Un peso enorme en el pecho que te hace pensar lo peor.</div>
+    <div class="symptoms-grid">
+        <div class="symptom-card">❌ Taquicardias intensas</div>
+        <div class="symptom-card">❌ Mareos e inestabilidad</div>
+        <div class="symptom-card">❌ Opresión en el pecho</div>
+        <div class="symptom-card">❌ Nudo en la garganta</div>
+        <div class="symptom-card">❌ Hormigueos en manos/cara</div>
+        <div class="symptom-card">❌ Miedo a morir o enloquecer</div>
     </div>
+</section>
 
-    <h2 class="section-title">¿Qué vas a lograr con esta Guía?</h2>
-    <p style="text-align:center;">Este no es un libro de "pensar positivo", es un manual de entrenamiento biológico.</p>
+<section class="section container" style="background: white; border-radius: 20px; padding: 30px;">
+    <h2 style="font-family: 'Montserrat'; color: var(--primary);">Lo que vas a lograr con este Manual:</h2>
     <ul>
-        <li><b>Resetear el nervio vago:</b> Para enviar señales de calma al corazón al instante.</li>
-        <li><b>Controlar crisis en público:</b> Técnicas invisibles que nadie notará que estás usando.</li>
-        <li><b>Dormir sin miedo:</b> Cómo apagar la mente antes de acostarte.</li>
-        <li><b>Entender el origen:</b> Por qué tu cuerpo decidió activar esta alarma y cómo apagarla.</li>
+        <li><strong>Reset Biológico:</strong> Ejercicios de 15 min para calmar el sistema nervioso.</li>
+        <li><strong>Control Total:</strong> Aprende a frenar un ataque de pánico antes de que escale.</li>
+        <li><strong>Libertad:</strong> Vuelve a salir a la calle sin miedo a los síntomas.</li>
     </ul>
 
-    <div class="faq">
-        <h2 class="section-title" style="margin-top:0;">Preguntas Frecuentes</h2>
-        <div class="faq-item">
-            <span class="faq-q">¿El pago es único?</span>
-            <p>Sí, solo pagas $17 USD una vez y tienes acceso de por vida.</p>
+    <div class="expert-box">
+        <div class="expert-img">
+            <img src="raquel_klein.jpg" alt="Psic. Raquel Klein" style="width:100%; height:100%; object-fit:cover;">
         </div>
-        <div class="faq-item">
-            <span class="faq-q">¿Cómo recibo la guía?</span>
-            <p>Inmediatamente después del pago, recibirás un correo de Hotmart con tu acceso.</p>
-        </div>
-        <div class="faq-item">
-            <span class="faq-q">¿Qué pasa si no me funciona?</span>
-            <p>Tienes 7 días de garantía total. Si no te gusta, pides el reembolso y listo.</p>
+        <div>
+            <h3>Sobre la Psic. Raquel Klein</h3>
+            <p>Con más de 25 años de experiencia clínica, la Dra. Klein ha ayudado a miles de personas a entender que la ansiedad no es una enfermedad, sino una respuesta fisiológica que se puede reentrenar.</p>
         </div>
     </div>
+</section>
 
-    <a href="https://go.hotmart.com/A103791493M?ap=b9c6" class="btn-cta" onclick="fbq('track', 'InitiateCheckout');">OBTENER ACCESO POR $17 USD</a>
+<section class="section container">
+    <h2 style="text-align: center; font-family: 'Montserrat'; color: var(--primary);">Llevate estos BONOS si ordenas hoy:</h2>
     
-    <p style="text-align:center; color: #777;">Pagos seguros procesados por <b>Hotmart</b> en tu moneda local.</p>
-</div>
+    <div class="bonus-box">
+        <span class="bonus-tag">GRATIS</span>
+        <h3>Bono #1: 5 Pasos para Vivir Sin Ansiedad</h3>
+        <p>La hoja de ruta para que la paz sea permanente y no solo temporal.</p>
+    </div>
+
+    <div class="bonus-box">
+        <span class="bonus-tag">GRATIS</span>
+        <h3>Bono #2: Diario de Gratitud y Seguimiento</h3>
+        <p>Reentrena tu cerebro para enfocarse en la sanación y no en el miedo.</p>
+    </div>
+
+    <div class="bonus-box">
+        <span class="bonus-tag">GRATIS</span>
+        <h3>Bono #3: Cuadernillo de Ejercicios de Bolsillo</h3>
+        <p>Técnicas discretas para usar en el trabajo o reuniones sociales.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <p style="text-decoration: line-through; color: #999; font-size: 1.2rem; margin: 0;">Valor Total: $141 USD</p>
+        <p style="font-size: 2.5rem; color: var(--accent); font-weight: 800; margin: 0;">HOY: $17 USD</p>
+        <p>O su equivalente en tu moneda local</p>
+    </div>
+
+    <a href="TU_HOTLINK_DE_AFILIADO" class="cta-button" onclick="fbq('track', 'InitiateCheckout');">¡SÍ! ACCEDER A TODO POR $17 USD</a>
+</section>
+
+<section class="container">
+    <div class="guarantee-box">
+        <img src="https://img.icons8.com/color/96/000000/guarantee.png" alt="Garantía" width="60">
+        <h3>7 Días de Garantía Incondicional</h3>
+        <p>Prueba el manual, aplica las técnicas y si no sientes que tus síntomas disminuyen, te devolvemos el 100% de tu dinero. Sin preguntas.</p>
+    </div>
+</section>
 
 <footer>
-    <div style="text-align:center; padding: 40px; font-size: 12px; color: #999;">
-        Mente en Calma - 2026<br>
-        Este sitio no es parte de Facebook o Google.
-    </div>
+    <p>&copy; 2026 Mente en Calma. Todos los derechos reservados.</p>
+    <p>Este sitio no es parte de Facebook o Google. Los resultados varían según cada individuo.</p>
 </footer>
 
 </body>
